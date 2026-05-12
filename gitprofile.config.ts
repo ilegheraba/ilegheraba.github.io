@@ -38,9 +38,8 @@ const CONFIG = {
   title: 'Iskander Legheraba | Optimization & Machine Learning',
   description:
     'Researcher in optimization and machine learning.',
-  imageURL: '',
+  imageURL: 'https://raw.githubusercontent.com/ilegh7/ilegh7.github.io/main/public/profile.jpeg',
   },  
-  seo: { title: 'Portfolio of Iskander LEGHERABA', description: '', imageURL: '' },
   social: {
     linkedin: 'iskander-legheraba',
     x: '', 
@@ -67,18 +66,18 @@ const CONFIG = {
     fileUrl:'', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-  'Mathematical Optimization',
-  'Mathematical Modeling',
-  'Algorithm design',
-  'Machine Learning',
-  'Numerical Optimization',
-  'Scientific Computing',
-  'Python',
-  'Pytorch',
-  'JaX',
-  'Matlab',
-  'Julia',
-  ],
+    'Optimization',
+    'Machine Learning',
+    'Numerical Optimization',
+    'Scientific Computing',
+    'Algorithm Design',
+    'Mathematical Modeling',
+    'Python',
+    'PyTorch',
+    'JAX',
+    'Julia',
+    'MATLAB',
+  ]
   experiences: [
     {
       company: 'CNRS Occitanie Est (LPHI lab)',
@@ -89,7 +88,7 @@ const CONFIG = {
     },
     {
       company: 'Université Paris Dauphine – PSL',
-      position: 'PhD Researcher and Teaching Assistant',
+      position: 'PhD Researcher and Lecturer',
       from: 'September 2020',
       to: 'August 2025',
       companyLink: 'https://dauphine.psl.eu/',
@@ -99,7 +98,7 @@ const CONFIG = {
   educations: [
     {
       institution: 'Université Paris Dauphine – PSL',
-      degree: 'Ph.D in CS',
+      degree: 'Ph.D. in Computer Science',
       from: '2020',
       to: '2025',
     },
@@ -124,8 +123,7 @@ const CONFIG = {
       journalName: '',
       authors: 'Iskander Legheraba',
       link: 'https://theses.hal.science/tel-05375890',
-      description:
-        'My Ph.D thesis manuscript, on mathematical optimization for deep learning. I studied structured nonconvex optimization, analyzing matrix problems (like matrix square root) to obtain guarantee on efficiency of algorithms. I also designed new algorithms for nonlinear least squares problems.',
+      description:'Ph.D. thesis on nonconvex optimization, focusing on landscape analysis for structured matrix problems and complexity analysis of algorithms for nonlinear least-squares optimization.',
     },
     {
       title: 'Asymptotic convergence rates for averaging strategies',
@@ -163,52 +161,16 @@ const CONFIG = {
     displayAvatarRing: true,
 
     // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'caramellatte',
-      'abyss',
-      'silk',
-      'procyon',
-    ],
+  themes: [
+    'corporate',
+    'winter',
+    'silk',
+    'procyon',
+    'business',
+  ]  
   },
-
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  footer: `© Iskander Legheraba`,
 
   enablePWA: true,
 };
