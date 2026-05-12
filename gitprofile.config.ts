@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -25,32 +25,21 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [''], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: '',
       // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
+      projects: [],
     },
   },
+  seo: {
+  title: 'Iskander Legheraba | Optimization & Machine Learning',
+  description:
+    'Researcher in optimization and machine learning.',
+  imageURL: '',
+  },  
   seo: { title: 'Portfolio of Iskander LEGHERABA', description: '', imageURL: '' },
   social: {
     linkedin: 'iskander-legheraba',
@@ -75,88 +64,84 @@ const CONFIG = {
     email: '',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl:'', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+  'Mathematical Optimization',
+  'Mathematical Modeling',
+  'Algorithm design',
+  'Machine Learning',
+  'Numerical Optimization',
+  'Scientific Computing',
+  'Python',
+  'Pytorch',
+  'JaX',
+  'Matlab',
+  'Julia',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'CNRS Occitanie Est (LPHI lab)',
+      position: 'Postdoctoral Researcher',
+      from: 'April 2026',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://lphi.umontpellier.fr/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Université Paris Dauphine – PSL',
+      position: 'PhD Researcher and Teaching Assistant',
+      from: 'September 2020',
+      to: 'August 2025',
+      companyLink: 'https://dauphine.psl.eu/',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  certifications: [],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Université Paris Dauphine – PSL',
+      degree: 'Ph.D in CS',
+      from: '2020',
+      to: '2025',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'ENS Paris-Saclay',
+      degree: 'Diploma',
+      from: '2016',
+      to: '2020',
     },
+    {
+      institution: 'ENS Paris-Saclay',
+      degree: 'Master 2 MVA',
+      from: '2019',
+      to: '2020',
+    },
+
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Landscape and complexity for classes of nonconvex optimization problems',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      journalName: '',
+      authors: 'Iskander Legheraba',
+      link: 'https://theses.hal.science/tel-05375890',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'My Ph.D thesis manuscript, on mathematical optimization for deep learning. I studied structured nonconvex optimization, analyzing matrix problems (like matrix square root) to obtain guarantee on efficiency of algorithms. I also designed new algorithms for nonlinear least squares problems.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
+      title: 'Asymptotic convergence rates for averaging strategies',
+      conferenceName: 'Foundations of Genetic Algorithms (FOGA 21) ',
       journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      authors: 'Laurent Meunier, Iskander Legheraba, Yann Chevaleyre, Olivier Teytaud',
+      link: 'https://dl.acm.org/doi/10.1145/3450218.3477302',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'A paper in mathematical analysis of evolutionary algorithms. We prove that averaging the best parallel evaluations converges faster than random search for a broad class of smooth functions.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
     username: '', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    limit: 0, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -164,7 +149,7 @@ const CONFIG = {
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'corporate',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
