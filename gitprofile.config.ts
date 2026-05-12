@@ -77,7 +77,7 @@ const CONFIG = {
     'JAX',
     'Julia',
     'MATLAB',
-  ]
+  ],
   experiences: [
     {
       company: 'CNRS Occitanie Est (LPHI lab)',
