@@ -38,8 +38,8 @@ const CONFIG = {
   title: 'Iskander Legheraba | Optimization & Machine Learning',
   description:
     'Researcher in optimization and machine learning.',
-  imageURL: 'https://raw.githubusercontent.com/ilegh7/ilegh7.github.io/main/public/profile.jpeg',
-  },  
+  imageURL: 'https://ilegh7.github.io/profile.jpeg',
+  }, 
   social: {
     linkedin: 'iskander-legheraba',
     x: '', 
